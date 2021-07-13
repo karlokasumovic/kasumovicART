@@ -1,0 +1,22 @@
+.some-box-box{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.some-box-div{
+    align-self: center;
+    padding-top: 5px;
+}
+.some-box-link{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width:700px) {
+    .some-box-box{
+        display: none;
+    }
+      
+  }
