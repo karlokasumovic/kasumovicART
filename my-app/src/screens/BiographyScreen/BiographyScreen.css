@@ -1,0 +1,41 @@
+.main-div{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.artist-bio{
+    font-family: Monaco;
+    font-size: 20px;
+    padding: 10px;
+    border: 10px solid #365f91;
+    
+   /* outline: 5px solid #365f91; */
+   
+}
+.img-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    align-self: center;
+}
+.artist-img-grid{
+    max-height: 575px;
+    border: 10px solid #365f91;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:900px) {
+   
+    .img-grid{
+        display:unset;
+        
+    }
+    .artist-img-grid{
+        max-width: 95%;
+        height: auto;
+        border: 10px solid #365f91;
+        
+    }
+}

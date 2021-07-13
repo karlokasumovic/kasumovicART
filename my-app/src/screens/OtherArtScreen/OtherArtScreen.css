@@ -1,0 +1,48 @@
+.img-grid-main{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #365f91;
+}
+.img-other-art{
+    height: 800px;
+    border: 15px double #365f91;
+}
+.text-box-1{
+    background-color: white;
+    border: 15px double #365f91;
+    width: 400px;   
+    position: absolute;
+    top: 270px;
+    left: 472px;
+}
+.text-box-1-heading{
+font-family: Monaco;
+text-transform: uppercase;
+font-size: 30px;
+}
+.text-box-1-text{
+    font-family: Monaco;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.text-box-2{
+    background-color: white;
+    border: 15px double #365f91;
+    width: 400px;   
+    position: absolute;
+    top: 556px;
+    right: 472px;
+}
+.text-box-2-heading{
+font-family: Monaco;
+font-size: 30px;
+text-transform: uppercase;
+}
+.text-box-2-text{
+    font-family: Monaco;
+    font-size: 20px;
+    text-transform: uppercase;
+}
