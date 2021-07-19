@@ -1,34 +1,41 @@
-.img-displayed{
-    height: 450px;
-  }
-  .image-grid-div{
-      display: flex;
-      justify-content: space-between;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-bottom: 10px;
-  }
 
-  .img-grid{
-      margin:20px auto;
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 40px;
+
+.img-grid {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 20px;
   }
-  .img-wrap{
-      overflow:hidden;
-      height: 0;
-      padding: 50% 0;
-      /* padding controls height so it will always be perfectly square regardless of width*/
-      position: relative;
-      opacity: 0.8;
+  
+  /* Create four equal columns that sits next to each other */
+  .img-wrap {
+    -ms-flex: 22%; /* IE10 */
+    flex: 22%;
+    max-width: 22%;
+    padding: 0 10px;
+  }
+  
+  .img-wrap img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+ /* @media screen and (max-width: 900px) {
+    .img-wrap {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
     }
-/*.img-img{
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 150%;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}*/
+  }
+  */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .img-wrap {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
