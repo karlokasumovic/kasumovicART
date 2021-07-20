@@ -11,7 +11,10 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
         <div className="backdrop" onClick={handleClick}>
             <div className="showed-box">
                 <img src={selectedImg.url} alt="enlarged painting"></img>
-                <div className="showed-box-text"><p>{selectedImg.id}</p></div>
+                <div className="showed-box-text">
+                    <p>{selectedImg.id}</p>
+                    <button className="put-img-to-basket-button">Put the item to basket</button>
+                </div>
             </div>
         </div>
     )

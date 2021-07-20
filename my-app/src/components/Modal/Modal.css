@@ -22,6 +22,10 @@
     border: 3px solid white;
     background-color: white;
 }
+.put-img-to-basket-button{
+    
+    height: 50px;
+}
 
 @media screen and (max-width: 900px) {
     .backdrop img{
