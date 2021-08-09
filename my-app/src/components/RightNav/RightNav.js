@@ -15,7 +15,7 @@ const RightNav = ({ open, setOpen }) => {
             return (
                 <div open={open} className="nav-div-closed">
                     <Link to="/biography" className="nav-link">biography</Link>
-                    <Link to="/paintings" className="nav-link">paintings</Link>
+                    <Link to="/" className="nav-link">paintings</Link>
                     <Link to="/otherart" className="nav-link">other art</Link>
                     <Link to="/basket" className="nav-link">basket</Link>
                     <KArtLogo classOption="k-art-logo-white"></KArtLogo>
