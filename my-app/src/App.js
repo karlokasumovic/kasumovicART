@@ -6,9 +6,9 @@ import BiographyScreen from './screens/BiographyScreen/BiographyScreen';
 import BasketScreen from './screens/BasketScreen/BasketScreen';
 import OtherArtScreen from './screens/OtherArtScreen/OtherArtScreen';
 import PaintingsScreen from './screens/PaintingsScreen/PaintingsScreen';
-import UploadForm from './components/UploadForm';
 import Modal from './components/Modal/Modal';
 import { useState } from 'react';
+import UploadPaintings from './screens/imports/UploadPaintings/UploadPaintings';
 function App() {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -16,6 +16,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavigationBar></NavigationBar>
+        <Route path='/uploadaj-paintings' component={UploadPaintings}></Route>
         <Route path='/biography' component={BiographyScreen}></Route>
         <Route path='/paintings' component={PaintingsScreen}></Route>
         <Route path='/otherart' component={OtherArtScreen}></Route>
@@ -27,7 +28,6 @@ function App() {
           </>
         )}></Route>
       </div >
-      <UploadForm></UploadForm>
     </BrowserRouter>
   );
 }
