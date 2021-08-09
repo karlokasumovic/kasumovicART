@@ -4,10 +4,11 @@
     margin-left: 40px;
     margin-right: 40px;
     background-color: #365f91;
+    max-width: 100%;
 }
 .img-other-art{
     height: 800px;
-    border: 15px double #365f91;
+    margin: 15px;
 }
 .text-box-1{
     background-color: white;
@@ -46,3 +47,107 @@ text-transform: uppercase;
     font-size: 20px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 1600px) {
+    .img-other-art{
+        height: 750px;
+    }
+    .text-box-1{
+        width: 300px;   
+    }
+    .text-box-1-heading{
+    font-size: 25px;
+    }
+    .text-box-1-text{
+        font-size: 15px;
+    }
+    
+    .text-box-2{
+        width: 300px;   
+    }
+    .text-box-2-heading{
+    font-size: 25px;
+    }
+    .text-box-2-text{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .text-box-1{
+        width: 250px;   
+        left: 425px;
+    }
+    .text-box-2{
+        width: 250px;   
+        right: 425px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .text-box-1{
+        top: 650px;
+        left: 200px;
+    }
+    .text-box-2{
+        top: 650px;
+        right: 200px;
+    }
+}
+
+  @media screen and (max-width: 1300px) {
+    .img-other-art{
+        height: 650px;
+    }
+    .text-box-1{
+        top: 550px;
+        left: 150px;
+    }
+    .text-box-2{
+        top: 550px;
+        right: 150px;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .img-other-art{
+        height: 500px;
+    }
+    .text-box-1{
+        top: 400px;
+        left: 100px;
+    }
+    .text-box-1-heading{
+    font-size: 20px;
+    }
+    .text-box-1-text{
+        font-size: 12px;
+    }
+    
+    .text-box-2{
+        top: 400px;
+        right: 100px;
+    }
+    .text-box-2-heading{
+    font-size: 20px;
+    }
+    .text-box-2-text{
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 906px) {
+    .img-grid-main{
+        display: block;
+    }
+    .img-other-art{
+        max-height: 500px;
+        max-width: 100%;
+    }
+    .text-box-1{
+        top: 100px;
+        left: 75px auto ;
+    }
+    .text-box-2{
+        top: 635px;
+        right: 100px;
+    }
+  }
