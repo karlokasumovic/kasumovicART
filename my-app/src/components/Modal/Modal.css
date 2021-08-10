@@ -22,9 +22,29 @@
     border: 3px solid white;
     background-color: white;
 }
+.showed-box-text{
+    width: 100%;
+    margin: 40px;
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+    border: 15px double #365f91;
+}
+.showed-box-painting-name{
+    margin-bottom: 150px;
+    text-align: center;
+    
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+.showed-box-painting-price{
+    margin-bottom: 100px;
+    
+}
 .put-img-to-basket-button{
     
-    height: 50px;
+    height: 100px;
+    width: 100%;
 }
 
 @media screen and (max-width: 900px) {

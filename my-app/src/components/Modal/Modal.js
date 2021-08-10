@@ -12,7 +12,9 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
             <div className="showed-box">
                 <img src={selectedImg.url} alt="enlarged painting"></img>
                 <div className="showed-box-text">
-                    <p>{selectedImg.id}</p>
+                    <p className="showed-box-painting-name">{selectedImg.paintingName}</p>
+                    <p className="showed-box-painting-size">The size of the painting: {selectedImg.paintingSize}</p>
+                    <p className="showed-box-painting-price">The price of the painting: {selectedImg.paintingPrice} kn</p>
                     <button className="put-img-to-basket-button">Put the item to basket</button>
                 </div>
             </div>
