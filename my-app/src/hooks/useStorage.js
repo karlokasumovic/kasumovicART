@@ -19,7 +19,10 @@ const useStorage = (file) => {
         }, async () => {
             const url = await storageRef.getDownloadURL();
             const createdAt = timestamp();
-            collectionRef.add({ url, createdAt });
+            const paintingName = file.paintingName;
+            const paintingSize = file.paintingSize;
+            const paintingPrice = file.paintingPrice;
+            collectionRef.add({ url, createdAt, paintingName, paintingSize, paintingPrice });
             setUrl(url);
         })
     }, [file])
